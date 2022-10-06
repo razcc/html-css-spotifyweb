@@ -27,10 +27,9 @@ footer{
 /* Colonna di SINISTRA */
 .col-left{
     background-color: black;
-    color: rgb(125, 127, 132);
-    padding-left: 1rem;
-    padding-top: 1rem;
-    padding-right: 4rem;   
+    color: rgb(125, 127, 132);   
+    width: 20%;
+    padding: 10px 20px 0 10px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -42,9 +41,11 @@ footer{
     margin-right: 0.5rem;
 }
 /* Lista Nuova playlist */
+/* .new-playlist-container{
+    overflow: scroll;
+} */
 .new-playlist{
    list-style-type: none;
-   overflow: auto;
 }
 
 .plus-playlist{
@@ -170,4 +171,86 @@ footer{
     width: 100%;
     object-fit: cover;
 
+}
+
+
+
+/* ************FOOTER********* */
+footer{
+    background-color: rgb(40, 40, 40);
+    display: flex;
+    justify-content: space-between;
+    color: grey;
+}
+
+/* Colonna di sinistra Footer */
+.col-left-footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container-col-left-footer-img{
+    width: 50px;
+    margin-right: 1rem;
+}
+
+.container-col-left-footer-img img{
+    width: 100%;
+}
+.footer-song-name{
+    color: white;
+}
+.hearth-folder-footer i{
+    margin-right: 10px;
+    margin-left: 20px;
+}
+
+/* Colonna Centrale Footer */
+.col-center-footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.time-music-footer-container{
+    display: flex;
+    margin-top: 20px;
+    align-items: center;
+   
+}
+.time-music-footer{
+    width: 500px;
+    height: 10px;
+    background-color: gray;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-radius: 10px;
+}
+.col-center-footer i{
+    margin-right: 10px;
+}
+
+
+
+
+/* Colonna di destra Footer */
+.col-right-footer{
+    color: gray;
+    display: flex;
+    align-items: center;
+}
+.col-right-footer i{
+    margin-left: 10px;
+}
+
+.volume-footer{
+    height: 10px;
+    border: 1px solid grey;
+    border-radius: 10px;
+    width: 200px;
+    background-color: grey;
+    margin-left: 10px;
 }
