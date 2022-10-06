@@ -8,6 +8,7 @@ body>div{
 }
 
 
+
 /* ********* 
        DIMENSIONAMENTO PAGINA ***** */
 
@@ -72,6 +73,7 @@ footer{
     background-color: rgb(20, 25, 34);
     display: flex;
     flex-direction: column;
+    overflow-y: auto;
     
 }
 
@@ -82,6 +84,10 @@ footer{
     justify-content: flex-end;
     padding: 2rem;
     background-color: rgba(0, 0, 0, 0.24);
+    position: sticky;
+    top:0;
+    width: 100%;
+    
     
 }
 
@@ -96,8 +102,13 @@ footer{
 
 /* MUSICA */
 .continer-musica{
-    padding: 7rem 1rem 1rem 1rem;
+    padding: 2rem 1rem 1rem 1rem;
     display: inline-block;
+}
+.continer-musica> h2{
+    color: white;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
 }
 
 .menu-music-selection{
@@ -119,4 +130,44 @@ footer{
 }
 .recently-played div img{
     width: 100%;
+}
+
+/* Creato per John Doe */
+.creation-for-JohnDoe-title,
+.artisti-popolari{
+    color: white;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+.creation-for-JohnDoe-title span,
+.artisti-popolari span{
+    color: gray;
+}
+.creation-for-JohnDoe-title-playlist{
+    display: flex;
+}
+.creation-for-JohnDoe-title-playlist div{
+    width: calc(100%/ 6);
+    padding: 10px;
+}
+.creation-for-JohnDoe-title-playlist img{
+    width: 100%;
+}
+
+/* Artisti popolari card */
+.artisti-popolari-card{
+    display: flex;
+}
+.artisti-popolari-card div{
+   width: 200px;
+   height: 200px;
+   border-radius: 50%;
+   margin-right: 2rem;
+}
+.artisti-popolari-card img{
+    border-radius: 50%;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+
 }
