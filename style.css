@@ -3,3 +3,65 @@
     margin: 0;
     box-sizing: border-box;
 }
+body>div{
+    height: 100vh;
+}
+
+
+/* ********* 
+       DIMENSIONAMENTO PAGINA ***** */
+
+
+main{
+    height: 90%;
+    background-color: darkblue;
+    display: flex;
+}
+footer{
+    height: 10%;
+}
+
+/* *********** MAIN ********** */
+
+
+/* Colonna di sinistra */
+.col-left{
+    background-color: black;
+    color: white;
+    padding-left: 1rem;
+    padding-top: 1rem;
+    padding-right: 3rem;   
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+.section-up-col-left i{
+    margin-right: 1rem;
+}
+/* Lista Nuova playlist */
+.new-playlist{
+   list-style-type: none;
+   overflow: auto;
+}
+
+.new-playlist i{
+    background-color: lightgray;
+    padding: 1rem;
+    color: black;
+}
+
+.new-playlist li{
+    margin-bottom: 1rem;
+}
+
+.section-up-col-left>div{
+    margin-bottom: 1rem;
+}
+.section-down-col-left>div{
+    margin-bottom: 1rem;
+}
+.section-down-col-left>hr{  
+    width: 100%;
+    color: white; 
+}
